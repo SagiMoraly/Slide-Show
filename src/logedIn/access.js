@@ -5,6 +5,8 @@ import {
   LOGED_IN_SIGNOUT,
   LOG_OUT,
 } from "../services/domService.js";
+import PAGES from "../../routes/pageModel.js";
+import { onChangePage } from "../../routes/router.js";
 
 export const accessHandle = () => {
   LOGED_IN_CREATE_PIC.classList.remove("d-none");
@@ -31,4 +33,5 @@ LOG_OUT.addEventListener("click", () => {
 
   //remove the exis user
   localStorage.removeItem("user");
+  onChangePage(PAGES.HOME);
 });
