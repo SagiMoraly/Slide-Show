@@ -152,7 +152,7 @@ export const signUp = () => {
       );
       onChangePage(PAGES.HOME);
     } catch (error) {
-      if (error == "User is already registered!") {
+      if (error.message == "User is already registered!") {
         SAME_EMAIL_ERROR.innerHTML =
           "This email have been used befor try to enter your user or use other email please";
       }
