@@ -28,3 +28,64 @@ main {
   content: "* ";
   color: red;
 }
+
+#social a {
+  display: inline-block;
+  width: 3em;
+  height: 3em;
+  border-radius: 50px;
+  overflow: hidden;
+  background: gray;
+  border: 3px solid #fff;
+  margin: 0 0.3em;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.32);
+  transition: 0.3s;
+  text-decoration: none;
+  outline: none;
+  font-weight: normal;
+  color: #000;
+  text-align: center;
+}
+
+#social a i {
+  display: block;
+  line-height: 1.6em;
+  color: #fbfde5;
+  font-size: 1.7em;
+  text-align: center;
+}
+
+#social .fa-facebook-f {
+  color: white;
+  background: #3b5998;
+}
+#social .fa-facebook-f:hover {
+  background: gray;
+}
+#social .fa-twitter {
+  color: white;
+  background: #1da1f2;
+}
+#social .fa-twitter:hover {
+  background: gray;
+}
+#social .fa-instagram {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+#social .fa-instagram:hover {
+  background: gray;
+}
+#social .fa-youtube {
+  color: white;
+  background: #ff0000;
+}
+#social .fa-youtube:hover {
+  background: gray;
+}
